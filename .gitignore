@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+
+# 项目特定
+temp/
+output/
+logs/
+*.log
+
+# 音频文件
+*.mp3
+*.wav
+*.m4a
+*.flac
+*.ogg
+
+# macOS
+.DS_Store
+*.swp
+
+# 模型缓存（首次运行自动下载）
+models/

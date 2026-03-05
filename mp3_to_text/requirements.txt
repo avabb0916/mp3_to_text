@@ -1,0 +1,13 @@
+# MP3转文本工具依赖
+
+# 语音识别核心
+faster-whisper>=0.10.0
+
+# 进度条
+tqdm>=4.65.0
+
+# 日志管理
+loguru>=0.7.0
+
+# 系统依赖（需要单独安装）:
+# brew install ffmpeg
