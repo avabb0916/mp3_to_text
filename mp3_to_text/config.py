@@ -38,8 +38,12 @@ SAMPLE_RATE = 16000
 # 临时文件目录
 TEMP_DIR = "temp"
 
-# ==================== 支持的音频格式 ====================
-SUPPORTED_FORMATS = [".mp3", ".wav", ".m4a", ".flac", ".ogg", ".wma", ".aac"]
+# ==================== 支持的格式 ====================
+# 音频格式
+SUPPORTED_AUDIO_FORMATS = [".mp3", ".wav", ".m4a", ".flac", ".ogg", ".wma", ".aac"]
+# 视频格式（ffmpeg 会自动提取音轨）
+SUPPORTED_VIDEO_FORMATS = [".mp4", ".mkv"]
+SUPPORTED_FORMATS = SUPPORTED_AUDIO_FORMATS + SUPPORTED_VIDEO_FORMATS
 
 
 def get_model_path() -> Path:

@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """
-MP3转文本工具 - 主程序
+音视频批量转文本工具 - 主程序
+支持格式：MP3、WAV、M4A、FLAC、OGG、WMA、AAC、MP4、MKV
 """
 
 import argparse
@@ -21,7 +22,7 @@ from converter import AudioConverter
 def parse_args():
     """解析命令行参数"""
     parser = argparse.ArgumentParser(
-        description="MP3批量转文本工具 - 使用 faster-whisper 进行离线语音识别",
+        description="音视频批量转文本工具 - 使用 faster-whisper 进行离线语音识别，支持 MP3/MP4/MKV 等格式",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 示例:
@@ -96,7 +97,7 @@ def main():
 
     # 记录启动信息
     logger.info("=" * 60)
-    logger.info("MP3转文本工具 - 启动")
+    logger.info("音视频转文本工具 - 启动")
     logger.info("=" * 60)
     logger.info(f"启动时间: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     logger.info(f"Python版本: {sys.version.split()[0]}")
